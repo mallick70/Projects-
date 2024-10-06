@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator using html</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text"  id="inputbox" >
+        <div>
+            <button style="color: brown;" onclick= "inputbox.value='' ">AC </button>
+            <button style="color: aquamarine;" onclick= "inputbox.value = inputbox.value.toString().slice (0,-1)" >Del</button>
+            <button class="opt" onclick= "inputbox.value += '%' ">%</button>
+            <button class="opt" onclick= "inputbox.value += '/' ">/</button>
+        </div>
+        <div>
+            <button onclick= "inputbox.value += 7 " >7</button>
+            <button onclick= "inputbox.value += 8 " >8</button>
+            <button onclick= "inputbox.value += 9 " >9</button>
+            <button class="opt" onclick= "inputbox.value += '*' " >x</button>
+        </div>
+        <div>
+            <button onclick= "inputbox.value += 4 ">4</button>
+            <button onclick= "inputbox.value += 5 ">5</button>
+            <button onclick= "inputbox.value += 6 ">6</button>
+            <button class="opt" onclick= "inputbox.value += '-' ">-</button>
+        </div>
+        <div>
+            <button onclick= "inputbox.value += 1 ">1</button>
+            <button onclick= "inputbox.value += 2 ">2</button>
+            <button onclick= "inputbox.value += 3 ">3</button>
+            <button class="opt" onclick= "inputbox.value += '+' ">+</button>
+        </div>
+        <div>
+            <button value="00" onclick= "inputbox.value += '00' ">00</button>
+            <button onclick= "inputbox.value += 0 ">0</button>
+            <button onclick= "inputbox.value += '.' ">.</button>
+            <button class="eqlbtn" value="=" onclick= "inputbox.value = eval(inputbox.value) "> = </button>
+        </div>
+    </div>
+</body>
+</html>
